@@ -1,0 +1,284 @@
+.App{
+  color:#747474; 
+  font-family: Helvetica,Arial, sans-serif;
+}
+header{
+   position: fixed;
+    width: 100%;
+    opacity: 0.9;
+    background-color: white;
+    z-index: 1;
+}
+
+.mainnav{
+  display:flex;
+  justify-content: space-around;
+  width: 390px;
+}
+ul{
+  list-style: none;
+}
+.logodocplanner{
+  width: 200px;
+  height:60px;
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+}
+.sublist{
+position:absolute;
+padding:0px;
+visibility: hidden;
+background-color: white;
+width: 220px;
+}
+.sublist li{
+  padding-top:10px;
+}
+.mainlist:last-child:hover .sublist{
+  visibility: visible;
+}
+
+header a{
+  text-decoration: none;
+  color: #747474;
+}
+header a:hover {
+  color:#00b39b;
+}
+
+/*intro*/
+.mainintro{
+  padding-top: 150px;
+
+}
+.intro{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro h1{
+  color: #00b39b;
+}
+.intro p{
+  width: 450px;
+  padding: 20px;
+  height:200px;
+}
+.introps{
+  display: flex;
+}
+
+
+.card{
+  display: flex;
+  width: 400px;
+  height: 350px;
+  flex-direction: column;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  padding: 20px;
+}
+.cardimg{
+  width:300px;
+  height:230px;
+  position: absolute;
+  left: 180px;
+  bottom: 5px;
+  
+}
+
+.select{
+  background-color: white;
+  border-radius: 8px;
+  color:black;
+  height: 50px;
+  width: 165px;
+}
+.cards{
+  display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.experiences{
+  display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    height: 600px;
+    background-color: #e5faf8;
+    overflow: hidden;
+}
+.exp1{
+  width: 198px;
+    height: 220px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+.exp1 h2{
+   color:#00b39b;
+}
+.exp1:first-child{
+  margin-top: 25px;
+}
+.exp1:nth-child(3){
+  margin-top: 25px;
+}
+.exp1:nth-child(2){
+  margin-top: -15px;
+}
+.exp1:nth-child(4){
+  margin-top: -15px;
+}
+.exps{ 
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  justify-content: space-around;
+  height: 510px;
+}
+.experintro{
+  width: 450px;
+  height: 600px;
+  overflow: hidden;
+  padding-left: 77px;
+    padding-top: 180px;
+}
+.experintro h2{
+  color:#00b39b;
+}
+.logoexpintro{
+  width: 370px;
+  margin-top: 104px;
+  margin-left: 43px;
+
+}
+.links{
+  display: flex;
+  justify-content: space-around;
+  height: 150px;
+  align-items: center;
+}
+.links ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 628px;
+}
+.links li{
+  display: inline-block;
+  padding-right: 21px;
+}
+svg:hover{
+  fill: #00b39b;
+}
+svg{
+  fill:#747474;
+}
+.linksp{
+  font-size: 20px;
+  width:300px;
+}
+.maindest{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  margin-bottom: 37px;
+}
+.maindestintro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 570px
+}
+.maindest h1{
+  color: #00b39b;
+  width:450;
+}
+.destinations{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 1100px;
+  margin: 0 auto;
+}
+.exp{
+  
+  width:300px;
+  height:350px;
+  border-radius: 5px;
+  background-color: white;
+  overflow: hidden;
+  margin-top: 20px;
+  border: 1px solid rgba(0,0,0,.04);
+  text-decoration: none;
+  color: black;  
+}
+.exp h3{
+  color:#747474; 
+}
+.exp:hover {
+  box-shadow: 15px 0 15px rgba(33,33,33,.2);
+}
+.expsub{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bttn{
+    background-color: #1662c6;
+    border: none;
+    border-radius: 3px;
+    height: 25px;
+    width: 115px;
+    color: white;
+    font-weight: bold;
+}
+.footlist{
+  display: inline-flex;
+}
+.mainfooter a{
+  color: #3d83df;
+  text-decoration: none;
+  padding-left: 5px;
+}
+.mainfooter a:hover{
+  text-decoration: underline;
+
+}
+.mainfooter{
+  height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .75em;
+    border-top:  2px solid rgba(0,0,0,.03);
+}
+.copy{
+  text-align: center;
+  padding: 0;
+  height: 20px;
+  font-size: .75em;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .logodocplanner {
+    width:100%;
+  }
+  .navbar {
+    width:100%;
+    float:none;
+  }
+}
